@@ -2,12 +2,13 @@ package multiplexer
 
 import (
   // "fmt"
-  
-  "github.com/justinschuster/gomux/pane/terminal"
+
+  "github.com/justinschuster/gomux/pkg/ansi" 
+  "github.com/justinschuster/gomux/pkg/pane"
 )
 
 type Multiplexer struct {
-  activePane pane.Pane
+  activePane    pane.Pane
   closeChan     chan struct{}
   ouput         chan byte
   stdoutWriter  *ansi.stdoutWriter
