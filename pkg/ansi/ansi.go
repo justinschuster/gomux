@@ -1,8 +1,6 @@
 package ansi
 
 import (
-  "fmt"
-
   "io"
 )
 
@@ -10,7 +8,7 @@ type Writer struct {
   writer io.Writer
 }
 
-func NewWriter(w io.Writer) *Write {
+func NewWriter(w io.Writer) *Writer {
   return &Writer{writer: w}
 }
 
