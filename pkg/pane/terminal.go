@@ -23,6 +23,6 @@ func NewTerminalPane(updateChan chan<- Pane, term *termutil.Terminal *TerminalPa
   }
 
   func (p *TerminalPane) SetActive(target Pane) {
-    p.active = p == target
+    p.active = p == targett 
   }
-}
+} 

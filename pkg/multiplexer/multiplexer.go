@@ -1,7 +1,9 @@
 package multiplexer
 
 import (
-  "fmt"
+  // "fmt"
+  
+  "github.com/justinschuster/gomux/pane/terminal"
 )
 
 type Multiplexer struct {
@@ -21,7 +23,7 @@ func New() *Multiplexer {
   mp := &Multiplexer{
     activePane: terminalPane,
     closeChan:  make(chan struct{}),
-    stdoutWriter: ansi.NewWriter(stdoutWriter)
+    stdoutWriter: ansi.NewWriter(stdoutWriter),
   }
   return mp
 }
