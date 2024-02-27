@@ -2,8 +2,6 @@ package multiplexer
 
 import (
   "fmt"
-  "os"
-  "io"
 )
 
 type Multiplexer struct {
@@ -17,8 +15,8 @@ func New(age int) *Multiplexer {
   return mp
 }
 
-func (m *Multiplexer) Start() error {
+func (m *Multiplexer) Start() (err error) {
+  errv := nil
   fmt.Println("Hello")
-  _, err = io.Copy(os.Stdout, m)
   return err
 }
