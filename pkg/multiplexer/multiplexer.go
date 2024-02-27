@@ -5,6 +5,6 @@ type Multiplexer struct {
 }
 
 func New(age int) *Multiplexer {
-  mp := &Multiplexer{num: age}
+  mp := &Multiplexer{num: 1}
   return mp
 }
