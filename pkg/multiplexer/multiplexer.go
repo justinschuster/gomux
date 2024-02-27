@@ -1,5 +1,12 @@
 package multiplexer
 
+import (
+  "fmt"
+  "os"
+  "err"
+  "io"
+)
+
 type Multiplexer struct {
   numTemp int
 }
