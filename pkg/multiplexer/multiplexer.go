@@ -3,7 +3,6 @@ package multiplexer
 import (
   "fmt"
   "os"
-  "err"
   "io"
 )
 
