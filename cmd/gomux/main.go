@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-  mp := mulitplexer.New() 
+  mp := multiplexer.New() 
   if err := mp.Start(); err != nil {
     panic(err)
   }
