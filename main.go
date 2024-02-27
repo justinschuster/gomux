@@ -7,10 +7,11 @@ import (
 )
 
 func main() {
-  mp := multiplexer.New() 
+  mp := multiplexer.newMultiplexer(1) 
   if err := mp.Start(); err != nil {
     panic(err)
   }
 
-  fmt.Print("\x1bc")
+  // fmt.Print("\x1bc")
+  fmt.Println(mp.num)
 }

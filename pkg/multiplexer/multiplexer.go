@@ -8,10 +8,9 @@ type Multiplexer struct {
   num int
 }
 
-func New() *Multiplexer {
-  numTemp = 1
+func newMultiplexer(age int) *Multiplexer {
   mp := &Multiplexer{
-    mp.num = numTemp
+    num = age
   }
   return mp
 }
