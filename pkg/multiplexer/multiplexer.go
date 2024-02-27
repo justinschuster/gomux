@@ -5,19 +5,13 @@ import (
 )
 
 type Multiplexer struct {
-  outputChan chan byte
+  num int
 }
 
 func New() *Multiplexer {
-  out := make(chan bye, 0xffff)
+  numTemp = 1
   mp := &Multiplexer{
-    output: out,
+    mp.num = numTemp
   }
   return mp
-}
-
-func (m *Multiplexer) Start() error {
-  fmt.Println("Hello")
-  _, err = io.Copy(os.Stdout, m)
-  return err
 }
