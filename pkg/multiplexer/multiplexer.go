@@ -15,8 +15,8 @@ func New(age int) *Multiplexer {
   return mp
 }
 
-func (m *Multiplexer) Start() (err error) {
-  err : error(nil)
+func (m *Multiplexer) Start() error {
+  err := error(nil)
   fmt.Println("Hello")
   return err
 }
