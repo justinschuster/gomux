@@ -1,10 +1,18 @@
 package multiplexer
 
 type Multiplexer struct {
-  num int
+  numTemp int
 }
 
 func New(age int) *Multiplexer {
-  mp := &Multiplexer{num: 1}
+  mp := &Multiplexer{
+    numTemp: 1,
+  }
   return mp
+}
+
+func (m *Multiplexer) Start() error {
+  fmt.Println("Hello")
+  _, err = io.Copy(os.Stdout, m)
+  return err
 }
