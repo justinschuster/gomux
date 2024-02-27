@@ -13,5 +13,5 @@ func main() {
   }
 
   // fmt.Print("\x1bc")
-  fmt.Println(mp.num)
+  fmt.Println("End")
 }
